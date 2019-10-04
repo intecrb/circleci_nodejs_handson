@@ -14,9 +14,10 @@ test("-30 + -21 は -51", () => {
   expect(sum(-30, -21)).toBe(-51);
 });
 
-test("", () => {
+test("Clazzのコンストラクタに値を入れて値が取得できるか", () => {
   let clazz = new Clazz(1, 2);
   expect(clazz.value).toBe(3);
+  expect(clazz.getValue()).toBe(3);
 });
 
 test("hello.jsのテスト hello to hello", () => {
